@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.video-decomposer-tools.json
+downloads/
+output/
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.wav
+*.mp3
