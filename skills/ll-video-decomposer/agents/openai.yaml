@@ -1,4 +1,4 @@
 interface:
   display_name: "LL Video Decomposer"
-  short_description: "专业拆解视频的选题、开头、结构、表达与成功边界，并提炼方法"
-  default_prompt: "Use $ll-video-decomposer to analyze this video, link, audio file, or transcript with the five-layer method."
+  short_description: "自动适配电脑转写并拆解视频的内容、视听语言与创作策略"
+  default_prompt: "Use $ll-video-decomposer to choose the fastest available transcription route and analyze this video with content, visual, audio, and reusable strategy evidence."

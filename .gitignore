@@ -2,6 +2,8 @@ __pycache__/
 *.py[cod]
 .DS_Store
 .video-decomposer-tools.json
+.video-decomposer-cache/
+.video-decomposer-venv/
 downloads/
 output/
 *.mp4
