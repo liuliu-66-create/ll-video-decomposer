@@ -1,0 +1,28 @@
+{
+  "name": "ll-video-decomposer",
+  "description": "Five-layer video decomposition skill with evidence-based analysis",
+  "platforms": {
+    "codex": {
+      "path": "codex/ll-video-decomposer",
+      "install_target": "Codex skills directory",
+      "trigger": "$ll-video-decomposer",
+      "extra_files": ["agents/openai.yaml"]
+    },
+    "workbuddy": {
+      "path": "workbuddy/ll-video-decomposer",
+      "install_target": "~/.workbuddy/skills/ll-video-decomposer/",
+      "trigger": "natural language (e.g. \u62c6\u89e3\u8fd9\u4e2a\u89c6\u9891, \u5206\u6790\u7206\u6b3e\u89c6\u9891, compare these videos)",
+      "skill_manifest": {
+        "agent_created": true
+      }
+    }
+  },
+  "shared": {
+    "scripts": "scripts/ (9 Python scripts, identical across platforms)",
+    "references": "references/ (7 markdown reference docs, identical across platforms)"
+  },
+  "dependencies": {
+    "required": [],
+    "optional": ["ffmpeg", "ffprobe", "yt-dlp", "openai-whisper", "faster-whisper"]
+  }
+}
