@@ -7,7 +7,8 @@ import wave
 from pathlib import Path
 
 
-SCRIPTS = Path(__file__).resolve().parents[1] / "skills" / "ll-video-decomposer" / "scripts"
+sys.dont_write_bytecode = True
+SCRIPTS = Path(__file__).resolve().parents[1] / "codex" / "ll-video-decomposer" / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 
 import tool_paths

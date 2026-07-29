@@ -172,6 +172,17 @@ Use $ll-video-decomposer to compare these three videos and identify shared patte
 分析这个视频的视听语言，提炼可复用的创作方法
 ```
 
+## 维护与验证
+
+提交版本前在仓库根目录运行：
+
+```powershell
+python -X utf8 scripts/validate_repository.py
+python -X utf8 -m unittest discover -s tests -v
+```
+
+第一条命令检查两套安装内容、按需路由、本地链接、上下文预算、行为回归场景和不应进入安装包的运行产物。第二条命令运行转写路由与仓库结构测试。推送和提交合并请求时，GitHub 也会自动执行相同检查。
+
 ## License
 
 MIT
